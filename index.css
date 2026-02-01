@@ -1,0 +1,71 @@
+
+/* Vercel Toast Hide */
+.vercel-toast {
+    display: none !important;
+}
+
+/* Custom Animations for Chat & UI */
+@keyframes glow {
+    0% { box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); }
+    50% { box-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 215, 0, 0.5); }
+    100% { box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); }
+}
+
+.animate-glow {
+    animation: glow 2s infinite;
+}
+
+/* Hide scrollbar for clean UI */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* SUPER DARK MODE (AMOLED) */
+.dark-mode {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+}
+
+.dark-mode .bg-white {
+    background-color: #000000 !important;
+    border-color: #333333 !important;
+    color: #ffffff !important;
+}
+
+.dark-mode .bg-slate-50, .dark-mode .bg-slate-100, .dark-mode .bg-gray-50, .dark-mode .bg-gray-100 {
+    background-color: #111111 !important;
+    border-color: #222222 !important;
+    color: #e0e0e0 !important;
+}
+
+.dark-mode .text-slate-800, .dark-mode .text-slate-700, .dark-mode .text-slate-900, 
+.dark-mode .text-gray-800, .dark-mode .text-gray-700, .dark-mode .text-gray-900 {
+    color: #ffffff !important;
+}
+
+.dark-mode .text-slate-500, .dark-mode .text-slate-600, .dark-mode .text-gray-500, .dark-mode .text-gray-600 {
+    color: #a0a0a0 !important;
+}
+
+/* Ensure inputs are visible */
+.dark-mode input, .dark-mode textarea, .dark-mode select {
+    background-color: #222222 !important;
+    color: #ffffff !important;
+    border-color: #444444 !important;
+}
+
+/* Ensure cards have borders */
+.dark-mode .shadow-sm, .dark-mode .shadow-md, .dark-mode .shadow-lg, .dark-mode .shadow-xl {
+    box-shadow: none !important;
+    border: 1px solid #333333 !important;
+}
+
+/* Bottom Nav Fix for Dark Mode */
+.dark-mode .fixed.bottom-0 {
+    background-color: #000000 !important;
+    border-top-color: #333333 !important;
+}
